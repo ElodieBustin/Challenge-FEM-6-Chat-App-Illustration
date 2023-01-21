@@ -6,7 +6,37 @@ body{
     font-size: 16px;
     max-width: 375px;
     height: 100vh;
+    margin: auto;
+    position: relative;
+    background-color: $lightGrayishViolet;
+
+>span.background-bloc{
+    height: 50%;
+    width: 100%;
+    border-radius: 0 0 200px 200px;
+    background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: -1;
 }
+>span.background-bloc2{
+    height: 50%;
+    width: 100%;
+    border-radius: 200px 200px 0 0;
+    opacity: 0.05;
+    background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
+    position: absolute;
+    bottom: 0;
+    right: -50%; 
+    // créé de l'espace supplémentaire en bas et à droite de l'élément (scroll possible alors que ça ne devrait pas)
+    // alors que tout se passe bien si l'élément se déplace vers la gauche
+    // espace blanc non sélectionnable, relié à rien, out of nowhere
+    // checker poourquoi
+    z-index: -1;
+}
+}
+
 
 .hidden{
     display: none;
