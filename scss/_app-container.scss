@@ -6,8 +6,8 @@ main{
     justify-content: space-around;
     
     .app-illustration{
-        height: 50%;
-        width: 50%;
+        height: 70%;
+        width: 70%;
         margin: auto;
         &__mobile{
             width: 100%;
@@ -23,20 +23,57 @@ main{
 
                 &__profil{
                     height: 20%;
+                    padding: 0 0.7rem;
                     border-radius: 25px 25px 10px 10px;
                     background: linear-gradient(270deg, $lightMagenta 0%, $lightViolet 100%);
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    align-items: flex-end;
+                    position: relative;
 
-                    i{
-                        color: $white;
+                    .white-space{
+                        position: absolute;
+                        width: 50%;
+                        height: 1rem;
+                        background-color: $white;
+                        top: 0;
+                        right: 25%;
+                        border-radius: 0 0 30px 30px;
                     }
-                    &--img{
-                        width: 10%;
-                        height: auto;
-                        border-radius: 50%;
-                        border: 1px solid $white;
+                    
+                    &--navigation{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 1rem;
+
+                        i{
+                            color: $white;
+                            font-size: 0.8rem;
+                        }
+
+                        img{
+                            width: 15%;
+                            height: auto;
+                            border-radius: 50%;
+                            border: 1px solid $white;
+                        }
+
+                        p{
+                            color: $white;
+                            display: flex;
+                            flex-direction: column;
+                            margin-right: 3rem;
+    
+                            .name{
+                                font-size: 1rem;
+                                font-weight: 700;
+                                padding-bottom: 0.4rem;
+                            }
+                            .available{
+                                font-size: 0.8rem;
+                                font-weight: 400;
+                            }
+                        }
                     }
                 }
                 

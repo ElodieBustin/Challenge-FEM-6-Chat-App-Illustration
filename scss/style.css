@@ -13,8 +13,8 @@ main {
 }
 
 main .app-illustration {
-  height: 50%;
-  width: 50%;
+  height: 70%;
+  width: 70%;
   margin: auto;
 }
 
@@ -34,9 +34,30 @@ main .app-illustration__mobile .screen {
 
 main .app-illustration__mobile .screen__profil {
   height: 20%;
+  padding: 0 0.7rem;
   border-radius: 25px 25px 10px 10px;
   background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
   background: linear-gradient(270deg, #e942ff 0%, #8838ff 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+main .app-illustration__mobile .screen__profil .white-space {
+  position: absolute;
+  width: 50%;
+  height: 1rem;
+  background-color: white;
+  top: 0;
+  right: 25%;
+  border-radius: 0 0 30px 30px;
+}
+
+main .app-illustration__mobile .screen__profil--navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,17 +67,42 @@ main .app-illustration__mobile .screen__profil {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1rem;
 }
 
-main .app-illustration__mobile .screen__profil i {
+main .app-illustration__mobile .screen__profil--navigation i {
   color: white;
+  font-size: 0.8rem;
 }
 
-main .app-illustration__mobile .screen__profil--img {
-  width: 10%;
+main .app-illustration__mobile .screen__profil--navigation img {
+  width: 15%;
   height: auto;
   border-radius: 50%;
   border: 1px solid white;
+}
+
+main .app-illustration__mobile .screen__profil--navigation p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 3rem;
+}
+
+main .app-illustration__mobile .screen__profil--navigation p .name {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+}
+
+main .app-illustration__mobile .screen__profil--navigation p .available {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 body {
