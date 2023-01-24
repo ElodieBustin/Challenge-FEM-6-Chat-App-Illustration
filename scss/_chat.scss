@@ -1,0 +1,22 @@
+.screen{
+    &__chat{
+        height: 80%;
+        font-weight: 300;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+
+        &__walkerBubble{
+            color: $moderateViolet;
+            max-width: 50%;
+            margin : 1rem 0 1rem 0.5rem
+        }
+
+        &__clientBubble{
+            color: $desaturatedDarkViolet;
+            max-width: 50%;
+            margin : 1rem 0 1rem 0.5rem;
+            align-self: flex-end;
+        }
+    }
+}
