@@ -122,16 +122,42 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
 
 .screen__chat__walkerBubble {
   color: #9241c8;
+  background-color: #efeaf1;
   max-width: 50%;
-  margin: 1rem 0 1rem 0.5rem;
+  margin: 1rem 0 0 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  border-radius: 10px 10px 10px 3px;
+}
+
+.screen__chat--photos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 60%;
+  margin: 1rem 0.5rem 0 0;
+}
+
+.screen__chat--photos-container > img {
+  width: 30%;
+  border-radius: 20%;
 }
 
 .screen__chat__clientBubble {
   color: #6e5d7e;
+  background-color: white;
   max-width: 50%;
-  margin: 1rem 0 1rem 0.5rem;
+  margin: 1rem 0.5rem 1rem 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  border-radius: 10px 10px 5px 10px;
 }
 
 body {

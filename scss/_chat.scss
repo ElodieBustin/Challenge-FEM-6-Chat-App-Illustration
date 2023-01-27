@@ -8,15 +8,37 @@
 
         &__walkerBubble{
             color: $moderateViolet;
+            background-color: hsl(283, 20%, 93%);
             max-width: 50%;
-            margin : 1rem 0 1rem 0.5rem
+            margin : 1rem 0 0 0.5rem;
+            padding: 0.5rem;
+            font-size: 0.6rem;
+            border-radius: 10px 10px 10px 3px;
+            
+        }
+
+        &--photos-container{
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-end;
+            max-width: 60%;
+            margin: 1rem 0.5rem 0 0;
+
+            >img{
+                width: 30%;
+                border-radius: 20%;
+            }
         }
 
         &__clientBubble{
             color: $desaturatedDarkViolet;
+            background-color: $white;
             max-width: 50%;
-            margin : 1rem 0 1rem 0.5rem;
+            margin : 1rem 0.5rem 1rem 0;
             align-self: flex-end;
+            padding: 0.5rem;
+            font-size: 0.6rem;
+            border-radius: 10px 10px 5px 10px;
         }
     }
 }
