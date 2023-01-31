@@ -5,6 +5,7 @@
         font-size: 0.8rem;
         display: flex;
         flex-direction: column;
+        font-size: 0.6rem;
 
         &__walkerBubble{
             color: $moderateViolet;
@@ -12,7 +13,6 @@
             max-width: 50%;
             margin : 1rem 0 0 0.5rem;
             padding: 0.5rem;
-            font-size: 0.6rem;
             border-radius: 10px 10px 10px 3px;
             
         }
@@ -37,8 +37,42 @@
             margin : 1rem 0.5rem 1rem 0;
             align-self: flex-end;
             padding: 0.5rem;
-            font-size: 0.6rem;
             border-radius: 10px 10px 5px 10px;
+        }
+
+        &__price{
+            color: $white;
+            max-width: 60%;
+            padding: 0.7rem;
+            background: linear-gradient(90deg, $lightMagenta 0%, $lightViolet 100%);
+            margin: 0.5rem 0rem 0 0.5rem;
+            border-radius: 10px 10px 10px 3px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >.time::before{
+                content: '';
+                display: inline-block;
+                width: 0.8rem;
+                height: 0.8rem;
+                border: 1px solid $white;
+                border-radius: 50%;
+                opacity: 0.5;
+                margin-right: 0.5rem;
+            }
+
+            >.time{
+                display: flex;
+                align-items: center;
+                font-size: 0.6rem;
+            }
+
+            >.amount{
+                font-weight: 800;
+                font-size: 0.8rem;
+            }
         }
     }
 }

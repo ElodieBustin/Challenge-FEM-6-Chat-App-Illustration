@@ -6,10 +6,11 @@
 body{
     font-size: 16px;
     max-width: 375px;
-    height: 100vh;
+    height: auto;
     margin: auto;
     position: relative;
     background-color: $lightGrayishViolet;
+    font-family: 'Rubik', sans-serif;
 
 >span.background-bloc{
     height: 50%;

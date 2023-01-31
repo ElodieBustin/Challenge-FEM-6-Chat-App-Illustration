@@ -17,7 +17,7 @@ main {
 main .app-illustration {
   height: 70%;
   width: 70%;
-  margin: auto;
+  margin: 5rem auto 1rem auto;
 }
 
 main .app-illustration__mobile {
@@ -35,7 +35,7 @@ main .app-illustration__mobile .screen {
 }
 
 main .app-illustration__mobile .screen__profil {
-  height: 20%;
+  height: 5rem;
   padding: 0 0.7rem;
   border-radius: 25px 25px 10px 10px;
   background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
@@ -97,14 +97,14 @@ main .app-illustration__mobile .screen__profil--navigation p {
 }
 
 main .app-illustration__mobile .screen__profil--navigation p .name {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 500;
   padding-bottom: 0.4rem;
 }
 
 main .app-illustration__mobile .screen__profil--navigation p .available {
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-size: 0.5rem;
+  font-weight: 300;
 }
 
 .screen__chat {
@@ -118,6 +118,7 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 0.6rem;
 }
 
 .screen__chat__walkerBubble {
@@ -126,7 +127,6 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
   max-width: 50%;
   margin: 1rem 0 0 0.5rem;
   padding: 0.5rem;
-  font-size: 0.6rem;
   border-radius: 10px 10px 10px 3px;
 }
 
@@ -156,17 +156,62 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.5rem;
-  font-size: 0.6rem;
   border-radius: 10px 10px 5px 10px;
+}
+
+.screen__chat__price {
+  color: white;
+  max-width: 60%;
+  padding: 0.7rem;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(90deg, #e942ff 0%, #8838ff 100%);
+  margin: 0.5rem 0rem 0 0.5rem;
+  border-radius: 10px 10px 10px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen__chat__price > .time::before {
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin-right: 0.5rem;
+}
+
+.screen__chat__price > .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.6rem;
+}
+
+.screen__chat__price > .amount {
+  font-weight: 800;
+  font-size: 0.8rem;
 }
 
 body {
   font-size: 16px;
   max-width: 375px;
-  height: 100vh;
+  height: auto;
   margin: auto;
   position: relative;
   background-color: #f5f3f7;
+  font-family: 'Rubik', sans-serif;
 }
 
 body > span.background-bloc {

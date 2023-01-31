@@ -9,8 +9,7 @@ main{
     .app-illustration{
         height: 70%;
         width: 70%;
-        margin: auto;
-
+        margin: 5rem auto 1rem auto;
 
 
         &__mobile{
@@ -26,7 +25,7 @@ main{
                 border-radius: 30px;
 
                 &__profil{
-                    height: 20%;
+                    height: 5rem;
                     padding: 0 0.7rem;
                     border-radius: 25px 25px 10px 10px;
                     background: linear-gradient(270deg, $lightMagenta 0%, $lightViolet 100%);
@@ -69,13 +68,13 @@ main{
                             margin-right: 3rem;
     
                             .name{
-                                font-size: 1rem;
-                                font-weight: 700;
+                                font-size: 0.9rem;
+                                font-weight: 500;
                                 padding-bottom: 0.4rem;
                             }
                             .available{
-                                font-size: 0.8rem;
-                                font-weight: 400;
+                                font-size: 0.5rem;
+                                font-weight: 300;
                             }
                         }
                     }
