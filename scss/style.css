@@ -165,7 +165,7 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
   padding: 0.7rem;
   background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
   background: linear-gradient(90deg, #e942ff 0%, #8838ff 100%);
-  margin: 0.5rem 0rem 0 0.5rem;
+  margin: 0.5rem 0 0 0.5rem;
   border-radius: 10px 10px 10px 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,9 +183,8 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
   display: inline-block;
   width: 0.8rem;
   height: 0.8rem;
-  border: 1px solid white;
+  border: 1px solid #e570ff;
   border-radius: 50%;
-  opacity: 0.5;
   margin-right: 0.5rem;
 }
 
@@ -202,6 +201,37 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
 .screen__chat__price > .amount {
   font-weight: 800;
   font-size: 0.8rem;
+}
+
+.screen__chat__message {
+  margin: 1rem;
+  padding: 0.4rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+.screen__chat__message > p.placeholder {
+  opacity: 0.3;
+  font-weight: 300;
+  font-size: 0.5rem;
+  margin-left: 0.6rem;
+}
+
+.screen__chat__message > .icon-container {
+  background-color: #3e2753;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-weight: 500;
 }
 
 body {
