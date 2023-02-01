@@ -16,7 +16,7 @@ body{
 >span.background-bloc{
     height: 50%;
     width: 100%;
-    border-radius: 0 0 200px 200px;
+    border-radius: 0 0 300px 200px;
     background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@ body{
 >span.background-bloc2{
     height: 50%;
     width: 100%;
-    border-radius: 200px 200px 0 0;
+    border-radius: 300px 200px 0 0;
     opacity: 0.05;
     background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
     position: absolute;

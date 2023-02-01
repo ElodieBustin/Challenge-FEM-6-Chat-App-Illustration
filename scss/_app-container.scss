@@ -7,9 +7,8 @@ main{
     box-sizing: border-box;
     
     .app-illustration{
-        height: 70%;
         width: 70%;
-        margin: 5rem auto 1rem auto;
+        margin: 4rem auto 1rem auto;
 
 
         &__mobile{
@@ -45,9 +44,9 @@ main{
                     
                     &--navigation{
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: space-around;
                         align-items: center;
-                        margin-bottom: 1rem;
+                        margin: 0 0.5rem 1rem 0.5rem;
 
                         i{
                             color: $white;
@@ -55,7 +54,7 @@ main{
                         }
 
                         img{
-                            width: 15%;
+                            width: 12%;
                             height: auto;
                             border-radius: 50%;
                             border: 1px solid $white;
@@ -68,7 +67,7 @@ main{
                             margin-right: 3rem;
     
                             .name{
-                                font-size: 0.9rem;
+                                font-size: 0.8rem;
                                 font-weight: 500;
                                 padding-bottom: 0.4rem;
                             }
