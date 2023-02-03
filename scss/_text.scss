@@ -4,6 +4,14 @@ text-align: center;
 height: auto;
 margin-bottom: 2rem;
 
+@include breakpoint-up(desktop){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+
+}
+
     &__title{
         color: $veryDarkDesaturatedViolet;
         font-size: 2.5rem;
@@ -17,5 +25,11 @@ margin-bottom: 2rem;
         font-weight: 300;
         font-size: 0.8rem;
         line-height: 1.8;
+
+        @include breakpoint-up(desktop){
+            padding: 1rem 0 0 0;
+            font-size: 1rem;
+            width: 70%;
+        }
     }
 }
