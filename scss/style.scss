@@ -18,48 +18,43 @@ body{
         max-width: 1440px;
     }
 
->span.background-bloc{
-    height: 50%;
-    width: 100%;
-    border-radius: 0 0 300px 200px;
-    background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
-    position: absolute;
-    top: 0;
-    left: -50%;
-    z-index: -1;
+    >span.background-bloc{
+        height: 50%;
+        width: 100%;
+        border-radius: 0 0 300px 200px;
+        background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
+        position: absolute;
+        top: 0;
+        left: -50%;
+        z-index: -1;
 
-    @include breakpoint-up(desktop){
-        width: 35%;
-        height: 85%;
-        left: -5%;
-        border-radius: 0 0 300px 300px;
+        @include breakpoint-up(desktop){
+            width: 35%;
+            height: 85%;
+            left: -5%;
+            border-radius: 0 0 300px 300px;
+        }
     }
-}
->span.background-bloc2{
-    height: 50%;
-    width: 100%;
-    border-radius: 300px 200px 0 0;
-    opacity: 0.05;
-    background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
-    position: absolute;
-    bottom: 0;
-    right: -50%; 
-    // créé de l'espace supplémentaire en bas et à droite de l'élément (scroll possible alors que ça ne devrait pas)
-    // alors que tout se passe bien si l'élément se déplace vers la gauche
-    // espace blanc non sélectionnable, relié à rien, out of nowhere
-    // checker poourquoi
-    z-index: -1;
+    >span.background-bloc2{
+        height: 50%;
+        width: 100%;
+        border-radius: 300px 200px 0 0;
+        opacity: 0.05;
+        background: linear-gradient(180deg, $lightMagenta 0%, $lightViolet 100%);
+        position: absolute;
+        bottom: 0;
+        right: -50%; 
+        // créé de l'espace supplémentaire en bas et à droite de l'élément (scroll possible alors que ça ne devrait pas)
+        // alors que tout se passe bien si l'élément se déplace vers la gauche
+        // espace blanc non sélectionnable, relié à rien, out of nowhere
+        // checker poourquoi
+        z-index: -1;
 
-    @include breakpoint-up(desktop){
-        width: 35%;
-        height: 85%;
-        right: -5%;
-        border-radius: 300px 300px 0 0;
+        @include breakpoint-up(desktop){
+            width: 35%;
+            height: 85%;
+            right: -5%;
+            border-radius: 300px 300px 0 0;
+        }
     }
-}
-}
-
-
-.hidden{
-    display: none;
 }

@@ -5,10 +5,19 @@ main{
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
+
+    @include breakpoint-up(desktop){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
     .app-illustration{
         width: 70%;
         margin: 4rem auto 1rem auto;
+        
+        @include breakpoint-up(desktop){
+            width: 0;
+        }
 
 
         &__mobile{
@@ -17,6 +26,11 @@ main{
             border: 10px solid $white;
             border-radius: 30px;
             background-color: $lightGrayishViolet;
+
+            @include breakpoint-up(desktop){
+                width: 252px;
+                height: auto;
+            }
 
             .screen{
                 height: 100%;
