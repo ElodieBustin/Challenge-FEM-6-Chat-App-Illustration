@@ -30,6 +30,7 @@ main{
             @include breakpoint-up(desktop){
                 width: 252px;
                 height: auto;
+                margin-top: 5rem;
             }
 
             .screen{

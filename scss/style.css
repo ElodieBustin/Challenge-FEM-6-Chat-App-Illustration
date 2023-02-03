@@ -46,6 +46,7 @@ main .app-illustration__mobile {
   main .app-illustration__mobile {
     width: 252px;
     height: auto;
+    margin-top: 5rem;
   }
 }
 
@@ -297,6 +298,7 @@ main .app-illustration__mobile .screen__profil--navigation p .available {
 @media (min-width: 700px) {
   .app-text__paragraphe {
     padding: 1rem 0 0 0;
+    font-weight: 400;
     font-size: 1rem;
     width: 70%;
   }
@@ -357,7 +359,7 @@ body > span.background-bloc2 {
   body > span.background-bloc2 {
     width: 35%;
     height: 85%;
-    right: -5%;
+    right: -15%;
     border-radius: 300px 300px 0 0;
   }
 }
